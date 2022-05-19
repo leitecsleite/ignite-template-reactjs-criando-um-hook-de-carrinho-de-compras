@@ -31,7 +31,6 @@ const Home = (): JSX.Element => {
 
     return newSumAmount;
   }, {} as CartItemsAmount)
-
   useEffect(() => {
     async function loadProducts() {
       const response = await api.get<Product[]>('products');
@@ -72,7 +71,6 @@ const Home = (): JSX.Element => {
         </li>) 
       
       })}
-
 
     </ProductList>
   );
